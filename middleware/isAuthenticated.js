@@ -1,5 +1,6 @@
-export default function ({ store, redirect }) {
+export default function ({ app, store, redirect }) {
+  const curPath = app.router.history.current.path
   if (!store.state.auth.loggedIn) {
-    return redirect('/login')
+    return redirect({ path: '/login', query: { lastRoute: curPath } })
   }
 }
