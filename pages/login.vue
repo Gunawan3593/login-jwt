@@ -1,11 +1,15 @@
 <template>
   <div>
-    <auth-login />
+    <login />
   </div>
 </template>
 
 <script>
-export default {}
+import Login from '~/components/Login.vue'
+export default {
+  components: { Login },
+  middleware: 'isGuest'
+}
 </script>
 
 <style></style>

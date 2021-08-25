@@ -23,7 +23,7 @@
                 <nuxt-link
                   class="nav-link active"
                   aria-current="page"
-                  to="/auth/login"
+                  to="/login"
                 >
                   Login
                 </nuxt-link>
@@ -32,7 +32,7 @@
                 <nuxt-link
                   class="nav-link active"
                   aria-current="page"
-                  to="/auth/register"
+                  to="/register"
                 >
                   Register
                 </nuxt-link>
