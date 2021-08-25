@@ -12,7 +12,11 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css' }
+    ],
+    script: [
+      { type: 'text/javascript', src: 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js' }
     ]
   },
 
@@ -41,6 +45,9 @@ export default {
   ],
 
   auth: {
+    redirect: {
+      logout: '/login'
+    },
     strategies:
     { // The strategies are ways that we want to implement our authentication with here we just use local strategy
       local: { // The name of our strategy
