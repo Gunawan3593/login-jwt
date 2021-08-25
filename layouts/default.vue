@@ -14,7 +14,3 @@ export default {
   components: { Header }
 }
 </script>
-
-<style>
-/* @import url("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css"); */
-</style>
